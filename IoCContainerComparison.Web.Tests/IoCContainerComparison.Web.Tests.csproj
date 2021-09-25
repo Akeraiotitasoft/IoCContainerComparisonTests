@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net45;net461;net472;net48</TargetFrameworks>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Reference Include="System.Web" />
+	<PackageReference Include="Unity.Mvc" Version="5.11.1" />
+	<PackageReference Include="Ninject.Web.Common" Version="3.3.2" />
+	<PackageReference Include="Akeraiotitasoft.ExodusContainer.Web" Version="0.1.0-beta" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="NUnit" Version="3.13.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IoCContainerComparisonTests\IoCContainerComparison.Tests.csproj" />
+  </ItemGroup>
+
+</Project>
